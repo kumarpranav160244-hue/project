@@ -8,14 +8,14 @@ function checkQuiz(){
         score += Number(answer.value);
     });
 
-    const total = 3;
+    const total = 30;
 
     let message = "";
 
     if(score === total){
         message = "🎉 Perfect! " + score + "/" + total;
     }
-    else if(score >= 2){
+    else if(score >= 20){
         message = "👍 Good Job! " + score + "/" + total;
     }
     else{
